@@ -1,0 +1,29 @@
+$color-pink: #ed078b;
+$color-blue: #423f8d;
+
+.header-info {
+    background-color: $color-pink;
+    .wrap {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .list-info {
+            display: flex;
+            .item {
+                font-size: 1.6em;
+                color: #fff;
+                .item-icon {
+                    color: #fff;
+                    font-size: 1.2em;
+                    padding: 0 12px;
+                    transition: 0.3s ease;
+                }
+                &:hover .item-icon {
+                    color: $color-blue;
+                }
+            }
+        }
+        
+    }
+}

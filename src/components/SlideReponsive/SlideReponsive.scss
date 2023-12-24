@@ -1,0 +1,13 @@
+.slick-arrow.slick-next {
+    right: -0px; //position arrow right
+    z-index: 5;
+}
+.slick-arrow.slick-prev {
+    left: -10px; //position arrow left
+    z-index: 5;
+}
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-prev::before {
+    color: gray; //arrows color
+    font-size: 30px; //arrows size
+}

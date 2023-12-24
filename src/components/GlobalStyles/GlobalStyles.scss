@@ -1,0 +1,24 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Sans:wght@400;500;700&display=swap');
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+.btn-font {
+    font-family: 'Concert One', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import './GridSystem'

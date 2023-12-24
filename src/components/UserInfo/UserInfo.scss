@@ -1,0 +1,77 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+
+.info-wrap {
+  position: relative;
+  height: 50px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 2px solid $color-blue;
+  &:hover {
+    cursor: pointer;
+    .info- {
+      &name {
+        color: $color-pink;
+      }
+      &sub {
+        visibility: visible;
+      }
+    }
+  }
+  .info- {
+    &img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    &name {
+      font-size: 2em;
+      font-weight: 700;
+      margin: 0 4px;
+      color: $color-blue;
+    }
+    &sub {
+      position: absolute;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 2px solid #959da533;
+      padding: 20px;
+      right: 0;
+      top: 50px;
+      bottom: -160px;
+      z-index: 4;
+      width: 260px;
+      visibility: hidden;
+      &::before {
+        right: -10px;
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 60px;
+        top: -35%;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        li {
+          padding: 10px;
+          &:hover {
+            cursor: pointer;
+            background-color: #e4e4e4;
+            border-radius: 10px;
+          }
+          .sub-item {
+            display: block;
+            font-size: 2em;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+$color-yellow: #fbce0f;
+$color-blue-sky: #12D9DF;
+.wrap-teacher {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 3em;
+    .teacher- {
+        &img {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 40px;
+            transition: 1s ease;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(237,7,139,0.2);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.5s ease;
+            }
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .socials {
+                    bottom: 30px;
+                }
+            }
+            .img {
+                width: 100%;
+                object-fit: cover;
+            }
+            .socials {
+                position: absolute;
+                width: 100%;
+                bottom: -30px;
+                transition: 0.5s ease;
+                z-index: 2;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        padding: 0 20px;
+                        a {
+                            i {
+                                color: #fff;
+                                font-size: 2.6em;
+                                &:hover {
+                                    color: $color-blue-sky;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 16px;
+            h3 {
+                font-size: 2.4em;
+                color: $color-blue;
+                transition: 0.3s ease;
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}

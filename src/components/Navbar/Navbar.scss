@@ -1,0 +1,95 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+$color-blue-sky: #12d9df;
+
+@keyframes move {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.navbar {
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  &.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    animation: move 0.35s ease forwards;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  .display-flex {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    .list {
+      display: flex;
+      .item {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item-btn {
+          position: relative;
+          display: block;
+          font-size: 2.4em;
+          padding: 10px 20px;
+          overflow: hidden;
+          background: linear-gradient(
+            to right,
+            $color-pink,
+            $color-pink 50%,
+            $color-blue 50%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 200% 100%;
+          background-position: 100%;
+          transition: background-position 275ms ease;
+
+          &:hover {
+            cursor: pointer;
+            color: $color-pink;
+            background-position: 0 100%;
+          }
+          &.active {
+            background-position: 0 100%;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 70%;
+              height: 2px;
+              background-color: $color-pink;
+              left: 50%;
+              bottom: 0px;
+              transform: translateX(-50%);
+            }
+          }
+          &--login {
+            border: 2px solid $color-blue;
+            border-radius: 20px;
+            &.active {
+              border-color: $color-pink;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

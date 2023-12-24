@@ -1,0 +1,68 @@
+$color-blue-sky: #12d9df;
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+
+.user-form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 80px auto;
+  padding: 40px;
+  box-shadow: 5px 10px 20px pink inset;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #e5d9d9;
+  }
+  .group {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    .title {
+      display: block;
+      width: 30%;
+      font-size: 2em;
+    }
+    .control {
+      width: 70%;
+      font-size: 2em;
+      padding: 12px;
+    }
+  }
+  .group-btn {
+    justify-content: flex-end;
+    .button {
+      border: 1px solid $color-blue;
+      color: $color-blue;
+      padding: 16px 24px;
+      font-size: 2em;
+      border-radius: 12px;
+      margin-left: 40px;
+      transition: 0.35s ease;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: $color-blue, $alpha: 0.2);
+      }
+      &--cancel {
+        border-color: $color-pink;
+        color: $color-pink;
+        &:hover {
+          background-color: rgba($color: $color-pink, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}

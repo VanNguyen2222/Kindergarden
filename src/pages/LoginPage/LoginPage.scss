@@ -1,0 +1,48 @@
+.login-form {
+  width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding-bottom: 30px !important;
+  padding: 10px;
+  box-shadow: 5px 10px 20px pink inset;
+  h2 {
+    font-size: 4em;
+    margin: 40px 0;
+  }
+  .control {
+    width: 300px;
+    padding: 8px 20px;
+    font-size: 1.8em;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: blueviolet;
+    border: 1px solid #ccc;
+  }
+  .control:focus {
+    border-color: pink;
+  }
+  .button {
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      background-color: darkblue;
+      transition: 0.5s;
+      color: #ccc;
+    }
+  }
+  label {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .label-alert{
+      color: black;
+  }
+}

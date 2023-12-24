@@ -1,0 +1,118 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+$color-yellow: #fbce0f;
+$color-blue-sky: #12D9DF;
+
+.color-pink {
+    color: $color-pink;
+}
+
+.color-yellow {
+    color: $color-yellow;
+}
+
+.color-blue-sky {
+    color: $color-blue-sky;
+}
+
+.class-wrap {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    .class- {
+        &name {
+            font-size: 3em;
+            text-align: center;
+            border-bottom: 1px solid rgb(238, 238, 238);
+            line-height: 2em;
+            color: $color-blue;
+        }
+
+        &info {
+            padding: 16px;
+            font-size: 2.2em;
+
+            span {
+                color: #5e5e5e;
+            }
+        }
+
+        &regis {
+            background-color: $color-blue-sky;
+            color: white;
+            font-size: 2.4em;
+            text-align: center;
+            padding: 6px 128px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            &:hover {
+                cursor: pointer;
+                color: $color-pink;
+            }
+        }
+    }
+}
+
+.grid {
+    .description {
+        border: 3px solid $color-pink;
+        border-radius: 35px;
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 100px;
+        height: 400px;
+        background-color: lavenderblush;
+        .right {
+            width: 60%;
+            float: right;
+            height: 350px;
+            margin-top: 30px;
+            h3 {
+                font-size: 20px;
+                // background-color: #12D9DF;
+                margin-top: 10px;
+                display: block;
+            }
+
+            .course-img {
+                height: 60px;
+                font-size: 20px;
+
+                .img {
+                    width: 50px;
+                    height: 40px;
+                    border-radius: 50%;
+                    float: left;
+                }
+
+                .text {
+                    width: 80%;
+                    float: left;
+                    display: inline;
+                    margin-left: 20px;
+                    h3 {
+                        display: inline-block;
+                    }
+                }
+
+            }
+
+        }
+
+        .left {
+            // width: 30%;
+            float: left;
+            border-radius: 50%;
+            margin-left: 50px;
+            margin-top: 20px;
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

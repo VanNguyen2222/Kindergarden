@@ -1,0 +1,126 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+$color-yellow: #fbce0f;
+$color-blue-sky: #12D9DF;
+
+.container {
+    width: 1200px;
+    max-width: 90vw;
+    margin: auto;
+    font-size: 16px;
+    padding: 40px 0;
+
+    .qs- {
+        &list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &name {
+            font-weight: bold;
+        }
+
+        &btn {
+            background-color: $color-blue-sky;
+            color: #fff;
+            padding: 10px 12px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 50px;
+            transition: color 0.3s ease-in;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            &:hover {
+                cursor: pointer;
+                color: $color-pink;
+            }
+        }
+    }
+
+    .score {
+        text-align: center;
+        font-size: 28px;
+        color: $color-blue;
+    }
+
+    .answer- {
+        &list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        &name {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 12px;
+            font-weight: bold;
+        }
+
+        &item {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 20px 0;
+            width: 600px;
+            max-width: 100%;
+
+            &--false {
+                border-left: 8px solid #ec0b43;
+            }
+
+            &--true {
+                border-left: 8px solid #00c985;
+            }
+        }
+    }
+
+    .option- {
+        &list {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &item {
+            position: relative;
+            margin-top: 20px;
+            padding: 6px;
+            border-radius: 6px;
+            word-wrap: break-word;
+            border: 1px solid;
+            margin-left: 28px;
+
+            .circle {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 50%;
+                left: -24px;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+
+            &--choosed::before {
+                content: "Your Answer";
+                position: absolute;
+                background-color: #f2f2f2;
+                top: -15px;
+                left: 4px;
+                height: 15px;
+                font-size: 11px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                padding: 0 5px;
+                padding-top: 1px;
+            }
+        }
+    }
+
+    .MuiButtonBase-root-16+label {
+        flex: 1;
+        max-width: calc(100% - 48px);
+    }
+}

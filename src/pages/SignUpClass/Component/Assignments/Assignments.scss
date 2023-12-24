@@ -1,0 +1,40 @@
+.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root,
+.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root{
+    font-size: 20px;
+}
+#fullWidth{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.btn-comment-send,.btn-comment-cancel{
+    float: right !important;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+    font-weight: 800 !important;
+    color: black !important;
+    padding: 0px 10px !important;
+    background-color: #80808057 !important;
+}
+.btn-comment-send{
+    background-color: cornflowerblue !important;
+    margin-right: 20px !important;
+}
+.icon-delete:hover{
+    color: black;
+}
+.text-document{
+    display: -webkit-box;
+    max-height: 5.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    line-height: 1.6rem;
+
+}
+.text-link{
+    font-size: 18px;
+    padding-left: 20px;
+    cursor: pointer;
+}

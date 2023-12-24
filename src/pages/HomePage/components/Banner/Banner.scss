@@ -1,0 +1,28 @@
+$color-blue: #423f8d;
+$color-pink: #ed078b;
+$color-yellow: #fbce0f;
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    .hero-caption {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        padding: 62px 100px;
+        border-radius: 40px;
+        .title {
+            font-size: 9em;
+            color: $color-blue;
+            &--yellow {
+                display: block;
+                color: $color-yellow;
+                font-size: 50px;
+            }
+        }
+    }
+}

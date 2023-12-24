@@ -1,0 +1,70 @@
+.homeWorkMain {
+    background-color: rgb(223, 221, 221);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    font-size: 22px;
+    padding: 50px 50px;
+    // position: relative;
+
+    button {
+        font-size: 20px;
+        padding: 5px 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .submit {
+        margin-left: 20px;
+    }
+
+    input {
+        width: 400px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .name {
+        font-weight: both;
+    }
+
+    form {
+        label {
+            display: block;
+        }
+    }
+
+    .edit {
+        margin-top: 30px;
+        border: 2px solid rgb(237, 230, 230);
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 60%;
+
+        .editHeader {
+            margin-bottom: 70px;
+        }
+
+        .answer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: stretch;
+            margin: 20px 150px;
+        }
+    }
+
+    h5 {
+        text-align: left;
+    }
+}

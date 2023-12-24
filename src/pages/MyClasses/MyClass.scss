@@ -1,0 +1,34 @@
+.classes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .my-class-card {
+        background: rgb(31, 151, 212);
+        background: linear-gradient(90deg, rgba(31, 151, 212, 1) 0%, rgba(237, 7, 139, 1) 26%, rgba(242, 206, 23, 1) 57%, rgba(251, 206, 15, 1) 61%, rgba(18, 217, 223, 1) 87%);
+        width: 300px;
+        height: 250px;
+        display: inline-block;
+        margin: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 90px 20px;
+
+        .name {
+            font-size: 50px;
+            color: white;
+        }
+    }
+}
+.grid{
+    h3{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(127, 127, 218);
+    }
+}

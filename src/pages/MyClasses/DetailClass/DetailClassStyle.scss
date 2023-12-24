@@ -1,0 +1,128 @@
+.detailMain {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 100px 100px 100px;
+    margin: auto;
+    max-width: 80vw;
+
+    .title-big {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title-big h2 {
+            color: #423f8d;
+            font-size: 6em;
+        }
+    }
+
+    label {
+        font-size: 30px;
+        color: #ed078b;
+        font-weight: bold;
+        background-color: white;
+        position: absolute;
+        margin: -40px 0px 20px 20px;
+        text-transform: capitalize;
+        // z-index: 1;
+    }
+
+    .homeWorkList,
+    .studentList {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #ed078b;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        // background: #W8CC0DE;
+        // background: linear-gradient(90deg, rgba(31, 151, 212, 1) 0%, rgba(237, 7, 139, 1) 0%, rgba(242, 206, 23, 1) 0%, rgba(251, 206, 15, 1) 0%, rgba(18, 217, 223, 1) 71%);
+
+        .listHW,
+        .title {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+        .title {
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            div {
+                flex: 1;
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        .listHW {
+            margin-bottom: 30px;
+
+            .itemHW {
+                font-size: 15px;
+                color: rgb(54, 143, 238);
+                font-weight: both;
+                flex: 1;
+
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                &:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .lock:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        button {
+            color: white;
+            background-color: black;
+            border-radius: 15px;
+            padding: 7px 10px;
+            border: none;
+            font-size: 20px;
+
+            &:hover {
+                background-color: blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .studentList {
+        .member-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                text-align: left;
+                flex: 1;
+                font-size: 24px;
+            }
+
+            &.member-title {
+                .item {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+    }
+}

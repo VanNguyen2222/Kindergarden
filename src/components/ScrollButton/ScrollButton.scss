@@ -1,0 +1,23 @@
+.btn-top {
+    position: fixed;
+    z-index: 999;
+    right: 40px;
+    bottom: 80px;
+    background-color: #ed078b;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    &.active {
+
+        visibility: visible;
+    }
+    .icon {
+        color: #fff;
+        font-size: 2em;
+    }
+}
