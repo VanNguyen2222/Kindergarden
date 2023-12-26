@@ -13,14 +13,12 @@ function HomePage(props) {
   const courses = useContext(CoursesContext);
   const teachers = useContext(TeachersContext);
   const user = useContext(AuthContext);
-  useEffect(() => {
-
-  },[user])
+  useEffect(() => {}, [user]);
   return (
     <>
       <Banner />
       <AboutPage />
-      {(!user || user?.role === "student") &&
+      {(!user || user?.role === "student") && (
         <div className="grid wide">
           <div className="title-big">
             <h2 className="btn-font">Courses we offer</h2>
@@ -41,11 +39,11 @@ function HomePage(props) {
           ) : (
             ""
           )}
-        </div>}
+        </div>
+      )}
       <div className="grid wide">
         <div className="title-big">
           <h2 className="btn-font">Expert Teachers</h2>
-          <p></p>
         </div>
         {teachers ? (
           <SlideReponsive number={Object.keys(teachers).length}>
